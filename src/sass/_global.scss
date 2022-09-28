@@ -17,4 +17,23 @@ body {
 
 html {
     font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+/****************** buttons ***************/
+.btn {
+    &:link,
+    &:visited {
+        display: inline-block;
+        background-color: $color-main;
+        color: #fff;
+        border-radius: 1rem;
+        text-decoration: none;
+        transition: all 0.3s;
+    }
+
+    &:hover,
+    &:active {
+        filter: brightness(90%);
+    }
 }

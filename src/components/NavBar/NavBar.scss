@@ -1,15 +1,36 @@
+@import '../../sass/variables.scss';
+
 .nav {
     &__list {
         list-style: none;
 
         display: flex;
+        align-items: center;
         gap: 2.4rem;
     }
 
-    &__link {
+    &__link:link,
+    &__link:visited {
         font-size: 1.8rem;
         font-weight: 500;
         color: inherit;
         text-decoration: none;
+
+        transition: color 0.3s;
+    }
+
+    &__link:hover,
+    &__link:active {
+        color: $color-main;
+    }
+
+    &__cta:link,
+    &__cta:visited {
+        font-size: 1.8rem;
+        font-weight: 500;
+
+        padding: 0.8rem 1.6rem;
+
+        transition: all 0.3s;
     }
 }

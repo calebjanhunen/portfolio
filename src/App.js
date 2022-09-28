@@ -1,5 +1,6 @@
 import React from 'react';
 
+import ContactForm from './sections/ContactForm/ContactForm';
 import Header from './sections/Header/Header';
 import Hero from './sections/Hero/Hero';
 import Projects from './sections/Projects/Projects';
@@ -9,14 +10,15 @@ import './App.css';
 
 const App = () => {
     return (
-        <body>
+        <>
             <Header />
             <main>
                 <Hero />
                 <Skills />
                 <Projects />
+                <ContactForm />
             </main>
-        </body>
+        </>
     );
 };
 

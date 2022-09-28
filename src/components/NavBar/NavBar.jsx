@@ -22,7 +22,7 @@ const NavBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav__link">
+                    <a href="#contact-form" className="nav__cta btn">
                         Contact Me
                     </a>
                 </li>

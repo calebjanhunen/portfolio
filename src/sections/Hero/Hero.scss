@@ -2,19 +2,22 @@
 @import '../../sass/typography.scss';
 
 .section-hero {
-    background-color: $color-main-light;
+    // background-color: $color-main-light;
+    background-image: linear-gradient(to bottom, $color-main-light, #fff);
     padding-top: 8rem;
-    height: 80vh;
+    // height: 80vh;
 
     .hero {
         max-width: 120rem;
         margin: 0 auto;
 
-        display: flex;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         align-items: center;
 
         &__img {
             border-radius: 999999rem;
+            width: 95%;
         }
 
         &__name {
@@ -22,7 +25,41 @@
         }
 
         &__subtitle {
+            margin: 0.8rem 0 4rem 0;
             font-size: 4.8rem;
+        }
+
+        &__cta {
+            padding: 1.2rem 2.4rem;
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        &__socials-list {
+            list-style: none;
+            padding-top: 1.6rem;
+
+            display: flex;
+            gap: 1.6rem;
+            align-items: center;
+
+            .social-link:link,
+            .social-link:visited {
+                display: inline-block;
+                color: inherit;
+                // font-size: 4rem;
+
+                transition: all 0.3s;
+            }
+
+            .social-link:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 2.4rem 4.8rem rgba(#000, 0.08);
+            }
+
+            .social-link:active {
+                transform: translateY(-1px);
+            }
         }
     }
 }
