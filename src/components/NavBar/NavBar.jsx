@@ -12,7 +12,7 @@ const NavBar = () => {
                     </a>
                 </li>
                 <li>
-                    <a href="#" className="nav__link">
+                    <a href="#skills" className="nav__link">
                         Skills
                     </a>
                 </li>

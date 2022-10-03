@@ -1,0 +1,69 @@
+@import '../../sass/variables.scss';
+
+.section-skills {
+    padding-top: 9.4rem;
+
+    .skills {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-items: center;
+        column-gap: 3.2rem;
+
+        &__container {
+            padding: 2.4rem 0;
+            border-radius: $default-border-radius;
+            box-shadow: 0rem 0rem 4.8rem rgba(#000, 0.2);
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3.2rem;
+        }
+
+        &__logos-box {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 80%;
+            align-items: center;
+            row-gap: 2.4rem;
+            column-gap: 2.4rem;
+            text-align: center;
+        }
+
+        .single-logo {
+            position: relative;
+
+            &__logo {
+                width: 80%;
+                transition: all 0.3s;
+            }
+
+            &__description {
+                font-size: 1.6rem;
+                font-weight: 700;
+
+                opacity: 0;
+                visibility: hidden;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+
+                transition: all 0.3s;
+
+                &:hover {
+                    cursor: default;
+                }
+            }
+
+            &:hover .single-logo__logo {
+                filter: blur(1rem);
+            }
+
+            &:hover .single-logo__description {
+                opacity: 100;
+                visibility: visible;
+            }
+        }
+    }
+}
