@@ -8,6 +8,7 @@ import javaLogo from '../../images/logos/java.svg';
 import javascriptLogo from '../../images/logos/javascript.svg';
 
 // Frameworks & Libraries logos
+import expressLogo from '../../images/logos/express.svg';
 import mongodbLogo from '../../images/logos/mongodb.svg';
 import nodeLogo from '../../images/logos/node-js.svg';
 import reactLogo from '../../images/logos/react.svg';
@@ -17,6 +18,8 @@ import gitLogo from '../../images/logos/git.svg';
 import linuxLogo from '../../images/logos/linux.svg';
 import npmLogo from '../../images/logos/npm.svg';
 import postmanLogo from '../../images/logos/postman.svg';
+import vsCodeLogo from '../../images/logos/vs-code.svg';
+import windowsLogo from '../../images/logos/windows.svg';
 
 import './Skills.scss';
 
@@ -35,6 +38,7 @@ const Skills = () => {
     const frameworksLogos = [
         { img: reactLogo, alt: 'React Logo' },
         { img: nodeLogo, alt: 'NodeJS Logo' },
+        { img: expressLogo, alt: 'ExpressJS Logo' },
         { img: mongodbLogo, alt: 'MongoDB Logo' },
     ];
 
@@ -42,8 +46,10 @@ const Skills = () => {
     const techLogos = [
         { img: gitLogo, alt: 'Git Logo' },
         { img: postmanLogo, alt: 'Postman Logo' },
-        { img: linuxLogo, alt: 'Linux Logo' },
         { img: npmLogo, alt: 'npm Logo' },
+        { img: linuxLogo, alt: 'Linux Logo' },
+        { img: windowsLogo, alt: 'Windows Logo' },
+        { img: vsCodeLogo, alt: 'vsCode Logo' },
     ];
 
     return (
