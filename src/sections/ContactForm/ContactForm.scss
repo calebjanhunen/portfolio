@@ -2,7 +2,10 @@
 @import '../../sass/global.scss';
 .section-contact {
     padding: $section-padding-top;
+    // background-color: $color-main-light;
+
     .contact-form {
+        background-color: #fff;
         max-width: 60rem;
         padding: 2.4rem;
         margin: 0 auto;

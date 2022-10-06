@@ -2,6 +2,7 @@
 
 .section-skills {
     padding-top: $section-padding-top;
+    // background-color: $color-main-light;
 
     .skills {
         display: grid;
@@ -11,6 +12,7 @@
 
         &__container {
             padding: 2.4rem 0;
+            background-color: #fff;
             border-radius: $default-border-radius;
             box-shadow: $box-shadow-default;
 

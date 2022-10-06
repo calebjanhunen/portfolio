@@ -2,9 +2,12 @@
 
 .section-aboutme {
     padding-top: $section-padding-top;
+    padding-bottom: 6.4rem;
+    // background-color: $color-main-light;
 
     .aboutme {
         &__paragraph {
+            background-color: #fff;
             font-size: 2rem;
             line-height: 1.5;
             padding: 3.2rem;

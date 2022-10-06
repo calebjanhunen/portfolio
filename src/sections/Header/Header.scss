@@ -23,14 +23,9 @@
 
 .scroll-down {
     z-index: 99;
-    animation: changeHeaderColor 0.5s;
+    animation: changeHeaderColor 0.4s;
     animation-fill-mode: forwards;
 }
-
-// .scroll-up {
-//     animation: changeHeaderColor 0.3s;
-//     animation-direction: reverse;
-// }
 
 @keyframes changeHeaderColor {
     0% {
