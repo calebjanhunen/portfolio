@@ -2,7 +2,7 @@ import React from 'react';
 
 const SkillContainer = ({ title, logos }) => {
     const logoDisplay = logos.map((logo, index) => (
-        <figure className="single-logo">
+        <figure key={index} className="single-logo">
             <img
                 className="single-logo__logo"
                 key={index}

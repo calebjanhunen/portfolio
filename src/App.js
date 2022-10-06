@@ -1,5 +1,6 @@
 import React from 'react';
 
+import AboutMe from './sections/AboutMe/AboutMe';
 import ContactForm from './sections/ContactForm/ContactForm';
 import Header from './sections/Header/Header';
 import Hero from './sections/Hero/Hero';
@@ -14,6 +15,7 @@ const App = () => {
             <Header />
             <main>
                 <Hero />
+                <AboutMe />
                 <Skills />
                 <Projects />
                 <ContactForm />

@@ -2,13 +2,14 @@
 @import '../../sass/typography.scss';
 
 .section-hero {
-    // background-color: $color-main-light;
-    background-image: linear-gradient(to bottom, $color-main-light, #fff);
-    padding-top: 8rem;
+    background-color: $color-main-light;
+    // background-image: linear-gradient(to bottom, $color-main-light, #fff);
+    // padding: 12.8rem 0;
     // height: 80vh;
 
     .hero {
         max-width: 120rem;
+        padding: 12.8rem 0;
         margin: 0 auto;
 
         display: grid;

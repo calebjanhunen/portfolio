@@ -7,7 +7,7 @@ import picture from '../../images/hero-img.png';
 
 const Hero = () => {
     return (
-        <section className="section-hero">
+        <section className="section-hero" id="hero">
             <div className="hero">
                 <img className="hero__img" src={picture} alt="" />
                 <div className="hero__text">

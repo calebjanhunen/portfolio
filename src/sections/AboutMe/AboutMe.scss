@@ -1,0 +1,19 @@
+@import '../../sass/variables.scss';
+
+.section-aboutme {
+    padding-top: 9.4rem;
+
+    .aboutme {
+        &__paragraph {
+            font-size: 2rem;
+            line-height: 1.5;
+            padding: 3.2rem;
+            border-radius: $default-border-radius;
+            box-shadow: $box-shadow-default;
+        }
+
+        &__important-text {
+            color: $color-main;
+        }
+    }
+}

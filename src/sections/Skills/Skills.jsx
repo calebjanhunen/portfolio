@@ -38,7 +38,7 @@ const Skills = () => {
         { img: mongodbLogo, alt: 'MongoDB Logo' },
     ];
 
-    //postman, linux, npm
+    //postman, linux, npm, vscode, windows, rest api
     const techLogos = [
         { img: gitLogo, alt: 'Git Logo' },
         { img: postmanLogo, alt: 'Postman Logo' },
