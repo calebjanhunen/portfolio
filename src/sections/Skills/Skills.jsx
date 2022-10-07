@@ -23,6 +23,7 @@ import windowsLogo from '../../images/logos/windows.svg';
 
 import './Skills.scss';
 
+import useSectionScrollIntoView from '../../hooks/useSectionScrollIntoView';
 import SkillContainer from './SkillContainer/SkillContainer';
 
 const Skills = () => {
@@ -42,6 +43,8 @@ const Skills = () => {
         { img: mongodbLogo, alt: 'MongoDB Logo' },
     ];
 
+    const skillsRef = React.useRef();
+
     //postman, linux, npm, vscode, windows, rest api
     const techLogos = [
         { img: gitLogo, alt: 'Git Logo' },
@@ -53,7 +56,15 @@ const Skills = () => {
     ];
 
     return (
-        <section className="section-skills" id="skills">
+        <section
+            ref={skillsRef}
+            className={`section-skills ${
+                useSectionScrollIntoView(skillsRef)
+                    ? 'scroll-into-view-animation'
+                    : ''
+            }`}
+            id="skills"
+        >
             <div className="container">
                 <h2 className="heading-secondary">Skills</h2>
                 <div className="skills">

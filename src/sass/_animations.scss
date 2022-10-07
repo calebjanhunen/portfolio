@@ -1,0 +1,9 @@
+@keyframes moveSectionUp {
+    0% {
+        transform: translateY(0rem);
+    }
+
+    100% {
+        transform: translateY(-10rem);
+    }
+}

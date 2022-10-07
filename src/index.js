@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDom from 'react-dom/client';
 
+import './sass/_animations.scss';
 import './sass/_global.scss';
 
 import App from './App';

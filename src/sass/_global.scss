@@ -42,3 +42,8 @@ html {
         filter: brightness(90%);
     }
 }
+
+.scroll-into-view-animation {
+    animation: moveSectionUp 0.3s;
+    animation-fill-mode: forwards;
+}

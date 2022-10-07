@@ -30,10 +30,10 @@ const Hero = () => {
                             Computer Engineer
                         </span>{' '}
                         <span className="hero__rotating-text">
-                            Full Stack Developer
+                            Back End Developer
                         </span>{' '}
                         <span className="hero__rotating-text">
-                            Problem Solver
+                            Front End Developer
                         </span>
                     </p>
 

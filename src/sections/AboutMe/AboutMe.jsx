@@ -1,12 +1,27 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 
 import './AboutMe.scss';
 
+import useSectionScrollIntoView from '../../hooks/useSectionScrollIntoView';
+
 const AboutMe = () => {
+    const aboutMeRef = useRef();
+    const aboutMeHeadingRef = useRef();
+
     return (
-        <section className="section-aboutme" id="aboutme">
+        <section
+            ref={aboutMeRef}
+            className={`section-aboutme ${
+                useSectionScrollIntoView(aboutMeRef)
+                    ? 'scroll-into-view-animation'
+                    : ''
+            }`}
+            id="aboutme"
+        >
             <div className="container">
-                <h2 className="heading-secondary">About Me</h2>
+                <h2 ref={aboutMeHeadingRef} className="heading-secondary">
+                    About Me
+                </h2>
                 <p className="aboutme__paragraph">
                     I am a software developer who enjoys full stack programming
                     as well as foundational computer mechanisms. I’m currently
