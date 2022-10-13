@@ -9,10 +9,15 @@ const SingleProject = ({
     githubLink,
     demoLink,
 }) => {
+    console.log(technologies);
     const technologiesDisplay = technologies.map((logo, index) => (
         <img
             key={index}
-            src={logo.imgPath.default}
+            src={
+                logo.alt === 'RestAPI Logo'
+                    ? logo.imgPath
+                    : logo.imgPath.default
+            }
             className="technology-used__logo"
             alt={logo.alt}
         />
@@ -34,7 +39,7 @@ const SingleProject = ({
                     {descriptionListDisplay}
                 </ul>
                 <div className="project__technology-used">
-                    <p>Technologies Used:</p>
+                    <p className="technology-used__text">Technologies Used:</p>
                     <div className="technology-used__logos">
                         {technologiesDisplay}
                     </div>
@@ -48,14 +53,16 @@ const SingleProject = ({
                     >
                         GitHub Repo
                     </a>
-                    <a
-                        href={demoLink}
-                        target="_blank"
-                        rel="noreferrer"
-                        className="project__btn"
-                    >
-                        Live Demo
-                    </a>
+                    {name !== 'Website Portfolio' && (
+                        <a
+                            href={demoLink}
+                            target="_blank"
+                            rel="noreferrer"
+                            className="project__btn"
+                        >
+                            Live Demo
+                        </a>
+                    )}
                 </div>
             </div>
         </div>

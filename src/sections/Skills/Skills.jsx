@@ -12,12 +12,14 @@ import expressLogo from '../../images/logos/express.svg';
 import mongodbLogo from '../../images/logos/mongodb.svg';
 import nodeLogo from '../../images/logos/node-js.svg';
 import reactLogo from '../../images/logos/react.svg';
+import socketioLogo from '../../images/logos/Socket-io.svg';
 
 // Technologies Logos
 import gitLogo from '../../images/logos/git.svg';
 import linuxLogo from '../../images/logos/linux.svg';
 import npmLogo from '../../images/logos/npm.svg';
 import postmanLogo from '../../images/logos/postman.svg';
+import restApiLogo from '../../images/logos/rest-api-icon.webp';
 import vsCodeLogo from '../../images/logos/vs-code.svg';
 import windowsLogo from '../../images/logos/windows.svg';
 
@@ -41,9 +43,8 @@ const Skills = () => {
         { img: nodeLogo, alt: 'NodeJS Logo' },
         { img: expressLogo, alt: 'ExpressJS Logo' },
         { img: mongodbLogo, alt: 'MongoDB Logo' },
+        { img: socketioLogo, alt: 'SocketIO Logo' },
     ];
-
-    const skillsRef = React.useRef();
 
     //postman, linux, npm, vscode, windows, rest api
     const techLogos = [
@@ -53,7 +54,10 @@ const Skills = () => {
         { img: linuxLogo, alt: 'Linux Logo' },
         { img: windowsLogo, alt: 'Windows Logo' },
         { img: vsCodeLogo, alt: 'vsCode Logo' },
+        { img: restApiLogo, alt: 'RestAPI Logo' },
     ];
+
+    const skillsRef = React.useRef();
 
     return (
         <section
