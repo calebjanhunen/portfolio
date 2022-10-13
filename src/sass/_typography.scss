@@ -19,3 +19,12 @@
     font-weight: 100;
     margin-bottom: 2.4rem;
 }
+
+/**********************/
+// BELOW 1104 px (landscape tablets)
+/**********************/
+@media (max-width: $landscape-tablets) {
+    .heading-primary {
+        font-size: 4.4rem;
+    }
+}

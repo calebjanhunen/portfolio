@@ -11,8 +11,13 @@ $font-color-primary: #555;
 /****************** FONT ***************/
 $default-font: 1.6rem;
 
+/****************** OTHERS ***************/
 $default-border-radius: 1rem;
 
 $box-shadow-default: 0rem 0rem 2.8rem rgba(#000, 0.15);
 
 $section-padding-top: 12.8rem;
+
+/****************** MEDIA QUERY BREAKPOINTS***************/
+// BELOW 1104 px (landscape tablets)
+$landscape-tablets: 69em;
