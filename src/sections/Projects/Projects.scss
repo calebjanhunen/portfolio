@@ -2,11 +2,6 @@
 
 .section-projects {
     padding-top: $section-padding-top;
-    // background-color: $color-main-light;
-
-    // ::-webkit-scrollbar {
-    //     display: none;
-    // }
 
     .projects {
         display: flex;
@@ -19,10 +14,54 @@
         .project:nth-child(even) {
             .project__img {
                 grid-column: 2/-1;
+
+                //for animation
+                transform: translateX(10rem);
+                opacity: 0;
             }
             .project__body {
-                // grid-column: 1/2;
                 grid-row: 1/-1;
+
+                //for animation
+                transform: translateX(-10rem);
+                opacity: 0;
+            }
+
+            .project__animation {
+                &--img {
+                    animation: moveLeft 1s;
+                    animation-fill-mode: forwards;
+                }
+
+                &--body {
+                    animation: moveRight 1s;
+                    animation-fill-mode: forwards;
+                }
+            }
+        }
+
+        .project:nth-child(odd) {
+            .project__img {
+                //for animation
+                transform: translateX(-10rem);
+                opacity: 0;
+            }
+            .project__body {
+                //for animation
+                transform: translateX(10rem);
+                opacity: 0;
+            }
+
+            .project__animation {
+                &--img {
+                    animation: moveRight 1s;
+                    animation-fill-mode: forwards;
+                }
+
+                &--body {
+                    animation: moveLeft 1s;
+                    animation-fill-mode: forwards;
+                }
             }
         }
 
@@ -116,5 +155,29 @@
                 }
             }
         }
+    }
+}
+
+@keyframes moveLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveRight {
+    0% {
+        opacity: 0;
+        transform: translateX(-10rem);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0rem);
     }
 }

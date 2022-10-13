@@ -74,7 +74,22 @@ const projects = [
         ],
         img: require('./images/website-portfolio-display.png'),
         githubLink: 'https://github.com/calebjanhunen/website-portfolio',
-        demoLink: 'https://janhunen-chat-app.herokuapp.com',
+    },
+
+    {
+        name: 'Workout Tracker (Frontend Redesign)',
+        technologiesUsed: [
+            { imgPath: require('./images/logos/react.svg'), alt: 'React Logo' },
+            { imgPath: require('./images/logos/html.svg'), alt: 'HTML Logo' },
+            { imgPath: require('./images/logos/css3.svg'), alt: 'CSS Logo' },
+        ],
+        description: [
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a laudantium mollitia maiores magni',
+            'Atque, accusantium minus? Facere in maxime quam esse minima! Recusandae vero ipsam explicabo,',
+            'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+        ],
+        img: require('./images/workout-tracker-frontend-display.png'),
+        githubLink: 'https://github.com/calebjanhunen/workout-tracker-frontend',
     },
 ];
 

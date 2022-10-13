@@ -1,5 +1,4 @@
 import React from 'react';
-import { CgWebsite } from 'react-icons/cg';
 
 const SingleProject = ({
     name,
@@ -9,7 +8,25 @@ const SingleProject = ({
     githubLink,
     demoLink,
 }) => {
-    console.log(technologies);
+    const projectRef = React.useRef();
+    const imgRef = React.useRef();
+    const bodyRef = React.useRef();
+
+    //animate project when scrolled into view
+    React.useEffect(() => {
+        const observer = new IntersectionObserver(
+            entries => {
+                if (entries[0].isIntersecting) {
+                    imgRef.current.classList.add('project__animation--img');
+                    bodyRef.current.classList.add('project__animation--body');
+                }
+            },
+            { threshold: 0.2 }
+        );
+
+        observer.observe(projectRef.current);
+    }, []);
+
     const technologiesDisplay = technologies.map((logo, index) => (
         <img
             key={index}
@@ -30,10 +47,10 @@ const SingleProject = ({
     ));
 
     return (
-        <div className="project">
-            <img className="project__img" src={img} alt={name} />
+        <div ref={projectRef} className="project">
+            <img ref={imgRef} className="project__img" src={img} alt={name} />
 
-            <div className="project__body">
+            <div ref={bodyRef} className="project__body">
                 <h3 className="heading-tertiary project__title">{name}</h3>
                 <ul className="project__description-list">
                     {descriptionListDisplay}
@@ -53,7 +70,7 @@ const SingleProject = ({
                     >
                         GitHub Repo
                     </a>
-                    {name !== 'Website Portfolio' && (
+                    {demoLink && (
                         <a
                             href={demoLink}
                             target="_blank"
