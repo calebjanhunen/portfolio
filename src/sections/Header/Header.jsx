@@ -6,7 +6,12 @@ import NavBar from '../../components/NavBar/NavBar';
 
 const Header = () => {
     const [headerFixed, setHeaderFixed] = useState(false);
+    const [mobileNavOpen, setMobileNavOpen] = useState(false);
     const headerRef = useRef();
+
+    const headerClasses = `header ${headerFixed ? 'scroll-down' : ''} ${
+        mobileNavOpen ? 'nav-open' : 'nav-closed'
+    }`;
 
     useEffect(() => {
         window.addEventListener('scroll', e => {
@@ -16,15 +21,12 @@ const Header = () => {
     }, [setHeaderFixed]);
 
     return (
-        <header
-            ref={headerRef}
-            className={`header ${headerFixed ? 'scroll-down' : 'scroll-up'}`}
-        >
+        <header ref={headerRef} className={headerClasses}>
             <a href="#hero" className="header__logo">
                 Caleb Janhunen
             </a>
 
-            <NavBar headerRef={headerRef} />
+            <NavBar setMobileNavOpen={setMobileNavOpen} />
         </header>
     );
 };

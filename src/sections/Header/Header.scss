@@ -1,6 +1,8 @@
 @import '../../sass/variables';
 
 .header {
+    z-index: 99;
+
     position: fixed;
     top: 0;
     width: 100%;
@@ -16,15 +18,17 @@
         font-weight: 700;
         text-decoration: none;
         color: inherit;
+        z-index: 100;
     }
 
     translate: all 0.3s;
 }
 
 .scroll-down {
-    z-index: 99;
-    animation: changeHeaderColor 0.4s;
-    animation-fill-mode: forwards;
+    background-color: #fff;
+    box-shadow: 0 0 2.4rem rgba(0, 0, 0, 0.2);
+    // animation: changeHeaderColor 0.4s;
+    // animation-fill-mode: forwards;
 }
 
 @keyframes changeHeaderColor {

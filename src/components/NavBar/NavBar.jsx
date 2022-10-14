@@ -3,38 +3,53 @@ import { GrClose, GrMenu } from 'react-icons/gr';
 
 import './NavBar.scss';
 
-const NavBar = ({ headerRef }) => {
-    function toggleNav() {
-        headerRef.current.classList.toggle('nav-open');
-    }
-
+const NavBar = ({ setMobileNavOpen }) => {
     return (
         <>
             <nav className="nav">
                 <ul className="nav__list">
                     <li>
-                        <a href="#aboutme" className="nav__link">
+                        <a
+                            href="#aboutme"
+                            className="nav__link"
+                            onClick={() => setMobileNavOpen(false)}
+                        >
                             About Me
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" className="nav__link">
+                        <a
+                            href="#skills"
+                            className="nav__link"
+                            onClick={() => setMobileNavOpen(false)}
+                        >
                             Skills
                         </a>
                     </li>
                     <li>
-                        <a href="#projects" className="nav__link">
+                        <a
+                            href="#projects"
+                            className="nav__link"
+                            onClick={() => setMobileNavOpen(false)}
+                        >
                             Projects
                         </a>
                     </li>
                     <li>
-                        <a href="#contact-form" className="nav__cta btn">
+                        <a
+                            href="#contact-form"
+                            className="nav__cta btn"
+                            onClick={() => setMobileNavOpen(false)}
+                        >
                             Contact Me
                         </a>
                     </li>
                 </ul>
             </nav>
-            <button className="nav__mobile-btn" onClick={toggleNav}>
+            <button
+                className="nav__mobile-btn"
+                onClick={() => setMobileNavOpen(prev => !prev)}
+            >
                 <GrMenu className="mobile-icon mobile-icon--open" size="35" />
                 <GrClose className="mobile-icon mobile-icon--close" size="35" />
             </button>

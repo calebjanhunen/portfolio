@@ -31,11 +31,7 @@
         &__subtitle {
             margin: 1.8rem 0 4rem 0;
             font-size: 4.8rem;
-
-            opacity: 0;
-            transform: translateY(5rem);
             animation: initialSubtitleMove 2s;
-            animation-fill-mode: forwards;
         }
 
         &__cta {
@@ -45,6 +41,8 @@
         }
 
         &__socials-list {
+            display: inline-block;
+
             list-style: none;
             padding-top: 1.6rem;
 
@@ -83,19 +81,19 @@
             position: absolute;
             animation: moveTextUp 6s ease-out infinite;
             animation-delay: 1s;
-            animation-fill-mode: forwards;
+            // animation-fill-mode: forwards;
         }
         &__rotating-text:nth-of-type(2) {
             position: absolute;
             animation: moveTextUp 6s ease-out infinite;
             animation-delay: 3s;
-            animation-fill-mode: forwards;
+            // animation-fill-mode: forwards;
         }
         &__rotating-text:nth-of-type(3) {
             position: absolute;
             animation: moveTextUp 6s ease-out infinite;
             animation-delay: 5s;
-            animation-fill-mode: forwards;
+            // animation-fill-mode: forwards;
         }
     }
 
