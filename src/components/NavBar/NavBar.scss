@@ -1,6 +1,14 @@
 @import '../../sass/variables.scss';
 
 .nav {
+    &__mobile-btn {
+        display: none;
+
+        .mobile-icon--close {
+            display: none;
+        }
+    }
+
     &__list {
         list-style: none;
 
@@ -34,3 +42,4 @@
         transition: all 0.3s;
     }
 }
+@import './NavbarQueries.scss';

@@ -13,16 +13,19 @@ body {
     line-height: 1;
     font-weight: 400;
     color: $font-color-primary;
+    overflow-x: hidden;
 }
 
 html {
     font-size: 62.5%;
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .container {
     max-width: 120rem;
     margin: 0 auto;
+    padding: 0 3.2rem;
 }
 
 /****************** buttons ***************/
@@ -46,4 +49,28 @@ html {
 .scroll-into-view-animation {
     animation: moveSectionUp 1s;
     animation-fill-mode: forwards;
+}
+
+/**********************/
+// MEDIA QUERIES //
+/**********************/
+
+/**********************/
+// BELOW 1104 px (landscape tablets)
+/**********************/
+@media (max-width: $landscape-tablets) {
+    html {
+        /* 9px / 16px  */
+        font-size: 56.25%;
+    }
+}
+
+/**********************/
+// BELOW 976 px (landscape tablets)
+/**********************/
+@media (max-width: $tablets) {
+    html {
+        /* 8px / 16px = 0.5 = 50% */
+        font-size: 50%;
+    }
 }

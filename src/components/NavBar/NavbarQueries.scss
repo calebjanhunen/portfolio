@@ -1,0 +1,50 @@
+@import '../../sass/variables.scss';
+
+@media (max-width: $tablets) {
+    .nav {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        // background-color: #fff;
+        z-index: 999;
+
+        &__list {
+            display: flex;
+            flex-direction: column;
+        }
+
+        opacity: 0;
+        /* 2) Make it unaccessible to mouse and keyboard */
+        pointer-events: none;
+        /* 3) Hide it from screen readers */
+        visibility: hidden;
+
+        &__mobile-btn {
+            display: block;
+            border: none;
+            background-color: transparent;
+
+            .mobile-icon {
+            }
+        }
+    }
+
+    .nav-open .mobile-icon--close {
+        display: block;
+    }
+    .nav-open .mobile-icon--open {
+        display: none;
+    }
+
+    .nav-open .nav {
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+    }
+}

@@ -28,3 +28,13 @@
         font-size: 4.4rem;
     }
 }
+
+/**********************/
+// BELOW 976 px (tablets)
+/**********************/
+@media (max-width: $tablets) {
+    .heading-tertiary {
+        font-size: 2.4rem;
+        margin-bottom: 1.6rem;
+    }
+}

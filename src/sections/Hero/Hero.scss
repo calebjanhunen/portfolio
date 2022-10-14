@@ -1,11 +1,9 @@
 @import '../../sass/variables.scss';
 @import '../../sass/typography.scss';
+@import './heroAnimations.scss';
 
 .section-hero {
-    // background-color: #c4cef4;
     background-image: linear-gradient(to bottom, $color-main-light, #fff);
-    // padding: 12.8rem 0;
-    // height: 80vh;
 
     .hero {
         max-width: 120rem;
@@ -44,12 +42,6 @@
             padding: 1.2rem 2.4rem;
             font-size: 2rem;
             font-weight: 700;
-
-            // transform: scale(0.2);
-            // opacity: 0;
-            // animation: expandButton 0.5s;
-            // animation-fill-mode: forwards;
-            // animation-delay: 0.5s;
         }
 
         &__socials-list {
@@ -77,12 +69,6 @@
                 &:active {
                     transform: translateY(-1px);
                 }
-            }
-            .social-link--expand {
-                // opacity: 0;
-                // animation: expandButton 0.5s;
-                // animation-fill-mode: forwards;
-                // animation-delay: 0.5s;
             }
         }
 
@@ -112,90 +98,6 @@
             animation-fill-mode: forwards;
         }
     }
+
+    @import './heroQueries.scss';
 }
-
-@keyframes moveTextUp {
-    0% {
-        opacity: 0;
-        transform: translateY(5rem);
-    }
-
-    5% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    20% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-
-    25% {
-        opacity: 0;
-        transform: translateY(-3rem);
-    }
-
-    100% {
-        opacity: 0;
-        transform: translateY(-3rem);
-    }
-}
-
-@keyframes initialSubtitleMove {
-    0% {
-        opacity: 0;
-        transform: translateY(5rem);
-    }
-
-    45% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes moveHeadingDown {
-    0% {
-        opacity: 0;
-        transform: translateY(-3rem);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes expandButton {
-    0% {
-        opacity: 0;
-        transform: scale(0.2);
-    }
-
-    75% {
-        opacity: 1;
-        transform: scale(1.2);
-    }
-
-    100% {
-        opacity: 1;
-
-        transform: scale(1);
-    }
-}
-
-/**********************/
-// MEDIA QUERIES //
-/**********************/
-
-/**********************/
-// BELOW 1104 px (landscape tablets)
-/**********************/
-// @media (max-width: $landscape-tablets) {
-//     .hero__subtitle {
-//         font-size: 3.6rem;
-//     }
-// }

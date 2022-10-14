@@ -1,0 +1,12 @@
+/**********************/
+// MEDIA QUERIES //
+/**********************/
+
+/**********************/
+// BELOW 1104 px (landscape tablets)
+/**********************/
+@media (max-width: $landscape-tablets) {
+    .hero__subtitle {
+        font-size: 3.6rem;
+    }
+}

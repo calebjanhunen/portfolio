@@ -24,7 +24,7 @@ const Header = () => {
                 Caleb Janhunen
             </a>
 
-            <NavBar />
+            <NavBar headerRef={headerRef} />
         </header>
     );
 };
