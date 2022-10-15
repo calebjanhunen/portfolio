@@ -1,0 +1,43 @@
+@import '../../sass/variables.scss';
+
+/**********************/
+// BELOW 976 px (tablets)
+/**********************/
+@media (max-width: $tablets) {
+    .header {
+        &__logo {
+            transition-delay: 0.3s;
+        }
+
+        .mobile-nav-circle {
+            display: inline-block;
+            z-index: -1;
+            background-color: $color-main-light-4;
+            border-radius: 50%;
+            width: 1px;
+            height: 1px;
+            // opacity: 0.9;
+
+            // visibility: hidden;
+
+            position: absolute;
+            top: 4.5rem;
+            left: 95.5%;
+            transform: translate(-50%, -50%);
+
+            transition: transform 0.8s ease-in-out;
+        }
+    }
+
+    .nav-open {
+        & > .mobile-nav-circle {
+            // visibility: visible;
+            transform: scale(2150);
+        }
+    }
+
+    .nav-open > .header__logo {
+        color: white;
+        transition-delay: 0.5s;
+    }
+}

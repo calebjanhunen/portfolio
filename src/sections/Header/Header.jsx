@@ -10,7 +10,7 @@ const Header = () => {
     const headerRef = useRef();
 
     const headerClasses = `header ${headerFixed ? 'scroll-down' : ''} ${
-        mobileNavOpen ? 'nav-open' : 'nav-closed'
+        mobileNavOpen ? 'nav-open' : ''
     }`;
 
     useEffect(() => {
@@ -30,6 +30,7 @@ const Header = () => {
                 mobileNavOpen={mobileNavOpen}
                 setMobileNavOpen={setMobileNavOpen}
             />
+            <div className="mobile-nav-circle"> </div>
         </header>
     );
 };
