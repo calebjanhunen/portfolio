@@ -26,7 +26,10 @@ const Header = () => {
                 Caleb Janhunen
             </a>
 
-            <NavBar setMobileNavOpen={setMobileNavOpen} />
+            <NavBar
+                mobileNavOpen={mobileNavOpen}
+                setMobileNavOpen={setMobileNavOpen}
+            />
         </header>
     );
 };
