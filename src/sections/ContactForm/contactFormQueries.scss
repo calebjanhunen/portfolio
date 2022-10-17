@@ -1,0 +1,24 @@
+@import '../../sass/variables.scss';
+
+/**********************/
+// BELOW 528 px (phones)
+/**********************/
+@media (max-width: $phones) {
+    .section-contact {
+        .contact-form {
+            .form {
+                grid-template-columns: 1fr;
+            }
+        }
+    }
+}
+
+/**********************/
+// BELOW 368 px (smaller phones)
+/**********************/
+@media (max-width: $smaller-phones) {
+    .section-contact {
+        padding-left: 2.4rem;
+        padding-right: 2.4rem;
+    }
+}

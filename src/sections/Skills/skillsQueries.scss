@@ -1,0 +1,30 @@
+@import '../../sass/variables.scss';
+
+/**********************/
+// BELOW 528 px (phones)
+/**********************/
+@media (max-width: $phones) {
+    .skills {
+        margin: 0 auto;
+
+        grid-template-columns: 1fr;
+        width: 80%;
+        justify-items: center;
+        row-gap: 4.8rem;
+
+        &__container {
+            // flex-shrink: 1;
+            // width: 80%;
+        }
+
+        &__logos-box {
+            grid-template-columns: 1fr 1fr;
+            justify-items: center;
+            row-gap: 4.8rem;
+
+            .single-logo {
+                width: 40%;
+            }
+        }
+    }
+}

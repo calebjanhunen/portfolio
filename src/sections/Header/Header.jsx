@@ -22,7 +22,11 @@ const Header = () => {
 
     return (
         <header ref={headerRef} className={headerClasses}>
-            <a href="#hero" className="header__logo">
+            <a
+                href="#hero"
+                className="header__logo"
+                onClick={() => setMobileNavOpen(false)}
+            >
                 Caleb Janhunen
             </a>
 

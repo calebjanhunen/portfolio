@@ -74,3 +74,31 @@ html {
         font-size: 50%;
     }
 }
+
+// /**********************/
+// // BELOW 736 px (smaller tablets)
+// /**********************/
+@media (max-width: $smaller-tablets) {
+    html {
+        /* 7px / 16px = 0.44 = 44% */
+        font-size: 44%;
+    }
+}
+
+/**********************/
+// BELOW 528 px (phones)
+/**********************/
+@media (max-width: $phones) {
+    .container {
+        text-align: center;
+    }
+}
+
+/**********************/
+// BELOW 368 px (smaller phones)
+/**********************/
+@media (max-width: $smaller-phones) {
+    html {
+        font-size: 37.5%;
+    }
+}

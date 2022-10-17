@@ -1,0 +1,24 @@
+@import '../../sass/variables.scss';
+
+// /**********************/
+// // BELOW 736 px (smaller tablets)
+// /**********************/
+@media (max-width: $smaller-tablets) {
+    .projects {
+        .project {
+            // grid-template-columns: 1fr;
+            // row-gap: 2.4rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3.2rem;
+
+            &__img {
+                width: 80%;
+            }
+
+            &__body {
+                font-size: 2rem;
+            }
+        }
+    }
+}

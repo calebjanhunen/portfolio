@@ -6,7 +6,7 @@
 @media (max-width: $tablets) {
     .header {
         &__logo {
-            transition-delay: 0.3s;
+            transition-delay: 0.2s;
         }
 
         .mobile-nav-circle {
@@ -14,30 +14,34 @@
             z-index: -1;
             background-color: $color-main-light-4;
             border-radius: 50%;
-            width: 1px;
-            height: 1px;
-            // opacity: 0.9;
 
-            // visibility: hidden;
+            //max screen size for mobile screen is 61em * 16px = 976px(97.6rem)
+            width: 300vmax;
+            height: 300vmax;
 
             position: absolute;
-            top: 4.5rem;
-            left: 95.5%;
-            transform: translate(-50%, -50%);
+            top: 0;
+            left: 100%;
+            // top: 4.5rem;
+            // left: calc(100vw - 5.5rem);
+            // top: 4.7rem;
+            // left: 95.5%;
+            transform: translate(-50%, -50%) scale(0);
+            // top: 0;
+            // left: 100%;
+            // transform: translate(-95.5%, calc(0% - 4.5rem));
 
-            transition: transform 0.8s ease-in-out;
+            transition: transform 0.5s;
         }
     }
 
     .nav-open {
         & > .mobile-nav-circle {
-            // visibility: visible;
-            transform: scale(2150);
+            transform: translate(-50%, -50%) scale(1);
         }
     }
 
     .nav-open > .header__logo {
         color: white;
-        transition-delay: 0.5s;
     }
 }

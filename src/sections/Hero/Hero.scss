@@ -17,6 +17,7 @@
         &__img {
             border-radius: 999999rem;
             width: 95%;
+            justify-self: center;
         }
 
         &__heading,
@@ -71,6 +72,7 @@
         }
 
         &__rotating-text {
+            display: inline-block;
             transform: translateY(5rem);
             opacity: 0;
             padding-left: 2.4rem;

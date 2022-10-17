@@ -10,3 +10,51 @@
         font-size: 3.6rem;
     }
 }
+
+/**********************/
+// BELOW 736 px (smaller tablets)
+/**********************/
+@media (max-width: $smaller-tablets) {
+    .hero {
+        padding: 19rem 0;
+        &__subtitle {
+            font-size: 3rem;
+        }
+
+        &__img {
+            width: 80%;
+        }
+    }
+}
+
+/**********************/
+// BELOW 528 px (phones)
+/**********************/
+@media (max-width: $phones) {
+    .hero {
+        padding: 15rem 0;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        row-gap: 3.2rem;
+
+        &__img {
+            width: 65%;
+        }
+
+        &__text {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &__subtitle {
+            align-self: flex-start;
+            padding-left: 3.2rem;
+        }
+
+        &__cta {
+            padding: 1.6rem 3.2rem;
+            font-size: 2.4rem;
+        }
+    }
+}

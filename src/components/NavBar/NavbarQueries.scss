@@ -23,11 +23,17 @@
         /* 3) Hide it from screen readers */
         visibility: hidden;
 
-        transition-delay: 0.4s;
+        transition-delay: 0.1s;
 
         &__list {
             display: flex;
             flex-direction: column;
+            gap: 4.8rem;
+        }
+
+        &__link:link,
+        &__link:visited {
+            font-size: 3.6rem;
         }
 
         &__cta {
@@ -36,6 +42,7 @@
                 background-color: #fff;
                 color: $color-main;
                 font-weight: 700;
+                font-size: 3.6rem;
             }
         }
 
@@ -44,7 +51,7 @@
             display: block;
             border: none;
             background-color: transparent;
-            z-index: 999;
+            // z-index: 999;
             color: #fff;
 
             .mobile-icon {
@@ -63,31 +70,5 @@
         opacity: 1;
         pointer-events: auto;
         visibility: visible;
-    }
-
-    // .nav::after {
-    //     display: inline-block;
-    //     z-index: 99;
-    //     content: '';
-    //     background-color: $color-main-light-2;
-    //     border-radius: 50%;
-    //     width: 4rem;
-    //     height: 4rem;
-    //     transform: scale(1);
-
-    //     position: absolute;
-    //     top: 0%;
-    //     left: 90%;
-    //     // transform: translate(-50%, -50%);
-
-    //     transition: transform 1s;
-    // }
-
-    // .nav-open .nav::after {
-    //     transform: scale(2);
-    // }
-
-    .nav-closed .nav::after {
-        // transform: scale(1);
     }
 }
