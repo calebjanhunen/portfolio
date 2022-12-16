@@ -14,7 +14,7 @@ const NavBar = ({ setMobileNavOpen }) => {
                             className="nav__link"
                             onClick={() => setMobileNavOpen(false)}
                         >
-                            About Me
+                            About
                         </a>
                     </li>
                     <li>
@@ -41,7 +41,7 @@ const NavBar = ({ setMobileNavOpen }) => {
                             className="nav__cta btn"
                             onClick={() => setMobileNavOpen(false)}
                         >
-                            Contact Me
+                            Contact
                         </a>
                     </li>
                 </ul>

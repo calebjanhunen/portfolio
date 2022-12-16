@@ -1,3 +1,4 @@
+import emailjs from 'emailjs-com';
 import React, { useEffect, useState } from 'react';
 
 import '../../sass/_global.scss';
@@ -19,17 +20,43 @@ const ContactForm = () => {
             textAreaRef.current.scrollHeight + 'px';
     }, [messageVal]);
 
+    function handleSubmit(e) {
+        e.preventDefault();
+        console.log(e.target);
+        emailjs
+            .sendForm(
+                process.env.REACT_APP_SERVICE_ID,
+                process.env.REACT_APP_TEMPLATE_ID,
+                e.target,
+                process.env.REACT_APP_USER_ID
+            )
+            .then(
+                result => {
+                    console.log(result.text);
+                    //TODO: SHow successfully submitted window
+                },
+                error => {
+                    console.log(error.text);
+                    //TODO: SHow error window
+                }
+            );
+        e.target.reset();
+        setMessageVal('');
+    }
+
     return (
         <section className="section-contact">
             <div className="contact-form" id="contact-form">
                 <h2 className="heading-secondary">Contact Me</h2>
-                <form className="form" action="#">
+                <form className="form" onSubmit={handleSubmit}>
                     <div className="form__group">
                         <input
                             className="form__input"
                             id="first-name"
                             type="text"
                             placeholder="First Name"
+                            name="from_first-name"
+                            // required
                         />
                         <label className="form__label" htmlFor="first-name">
                             First Name
@@ -42,6 +69,9 @@ const ContactForm = () => {
                             id="last-name"
                             type="text"
                             placeholder="Last Name"
+                            name="from_last-name"
+
+                            // required
                         />
                         <label className="form__label" htmlFor="last-name">
                             Last Name
@@ -54,6 +84,8 @@ const ContactForm = () => {
                             id="email"
                             type="email"
                             placeholder="Email"
+                            name="from_email"
+                            // required
                         />
                         <label className="form__label" htmlFor="email">
                             Email
@@ -70,6 +102,8 @@ const ContactForm = () => {
                             ref={textAreaRef}
                             onChange={e => setMessageVal(e.target.value)}
                             maxLength="280"
+                            name="message"
+                            // required
                         />
                         <label
                             className="form__label form__label--message"
@@ -80,7 +114,11 @@ const ContactForm = () => {
                         </label>
                     </div>
 
-                    <button className="btn form__btn">Send Message</button>
+                    <input
+                        type="submit"
+                        className="btn form__btn"
+                        value="Send Message"
+                    ></input>
                 </form>
             </div>
         </section>

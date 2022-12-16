@@ -45,23 +45,44 @@
 
             list-style: none;
             padding-top: 1.6rem;
+            padding-bottom: 1.2rem;
 
             display: flex;
             gap: 1.6rem;
             align-items: center;
 
-            .social-link {
-                &:link,
-                &:visited {
-                    display: inline-block;
-                    color: inherit;
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
 
-                    transition: all 0.3s;
-                }
+                transition: all 0.3s;
 
                 &:hover {
                     transform: translateY(-2px);
                     box-shadow: 0 2.4rem 4.8rem rgba(#000, 0.08);
+                }
+            }
+
+            li:nth-child(3) {
+                font-weight: 600;
+                color: #fff;
+                background-color: $font-color-primary;
+                padding: 0.8rem 1.6rem;
+                border-radius: 0.6rem;
+            }
+
+            .social-link {
+                &:link,
+                &:visited {
+                    text-decoration: none;
+                    font-size: 2rem;
+                    display: inline-block;
+                    color: inherit;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
                 }
 
                 &:active {
