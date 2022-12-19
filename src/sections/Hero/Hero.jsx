@@ -18,7 +18,7 @@ const Hero = () => {
     return (
         <section className="section-hero" id="hero">
             <div className="hero">
-                <img className="hero__img" src={picture} alt="" />
+                <img className="hero__img" src={picture} alt="Headshot" />
                 <div className="hero__text">
                     <h1 className="heading-primary hero__heading">
                         Hi, I'm{' '}
@@ -37,12 +37,8 @@ const Hero = () => {
                         </span>
                     </p>
 
-                    <a href="#contact-form" className="btn hero__cta">
-                        Get in touch
-                    </a>
-
                     <ul className="hero__socials-list">
-                        <li>
+                        <li className="social-list__item">
                             <a
                                 href="https://www.linkedin.com/in/caleb-janhunen-362b62171/"
                                 target="_blank"
@@ -53,7 +49,7 @@ const Hero = () => {
                                 <FaLinkedin size={40} />
                             </a>
                         </li>
-                        <li>
+                        <li className="social-list__item">
                             <a
                                 href="https://github.com/calebjanhunen"
                                 target="_blank"
@@ -64,7 +60,21 @@ const Hero = () => {
                                 <FaGithubSquare size={40} />
                             </a>
                         </li>
+                        <li className="social-list__item">
+                            <a
+                                href="#"
+                                target="_blank"
+                                className="social-link social-link--expand"
+                                rel="noreferrer"
+                            >
+                                Resume
+                            </a>
+                        </li>
                     </ul>
+
+                    <a href="#contact-form" className="btn hero__cta">
+                        Get in touch
+                    </a>
                 </div>
             </div>
         </section>
