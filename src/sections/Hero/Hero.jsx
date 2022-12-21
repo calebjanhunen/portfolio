@@ -1,5 +1,6 @@
 import React, { useRef } from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
+import resume from '../../documents/caleb_janhunen_resume.pdf';
 
 import './Hero.scss';
 
@@ -62,7 +63,7 @@ const Hero = () => {
                         </li>
                         <li className="social-list__item">
                             <a
-                                href="#"
+                                href={resume}
                                 target="_blank"
                                 className="social-link social-link--expand"
                                 rel="noreferrer"

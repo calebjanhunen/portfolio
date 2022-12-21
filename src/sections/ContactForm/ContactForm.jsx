@@ -6,9 +6,6 @@ import './ContactForm.scss';
 
 const ContactForm = () => {
     const [textAreaHeight, setTextAreaHeight] = useState(1);
-    const [firstNameVal, setFirstNameVal] = useState('');
-    const [lastNameVal, setLastNameVal] = useState('');
-    const [emailVal, setEmailVal] = useState('');
     const [messageVal, setMessageVal] = useState('');
 
     const textAreaRef = React.useRef(null);
