@@ -84,12 +84,13 @@ const projects = [
             { imgPath: require('./images/logos/css3.svg'), alt: 'CSS Logo' },
         ],
         description: [
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis a laudantium mollitia maiores magni',
-            'Atque, accusantium minus? Facere in maxime quam esse minima! Recusandae vero ipsam explicabo,',
-            'Lorem ipsum dolor sit amet consectetur adipisicing elit. ',
+            'Redesigned the frontend of the Workout Tracker application creating a more intuitive user interface',
+            'Developed the application using React, HTML and CSS',
+            'Semantic HTML and SCSS were utilized throughout the codebase to ensure easy readability and ability to create a responsive design',
         ],
         img: require('./images/workout-tracker-frontend-display.png'),
-        githubLink: 'https://github.com/calebjanhunen/workout-tracker-frontend',
+        githubLink:
+            'https://github.com/calebjanhunen/workout-tracker-website-FRONTEND',
     },
 ];
 
