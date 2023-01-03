@@ -1,0 +1,59 @@
+@import '../../sass/variables.scss';
+@import '../../sass/global.scss';
+
+.section-footer {
+    background-color: $footer-color;
+    color: #fff;
+    padding: 6.4rem 0 4rem 0;
+
+    .footer {
+        padding-bottom: 4rem;
+        font-size: 1.8rem;
+
+        display: grid;
+        grid-template-columns: 50fr 25fr 25fr;
+
+        &__contact {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 2.4rem;
+            border-right: 2px solid $color-main-light-2;
+            .name {
+                font-weight: 700;
+                font-size: 2.4rem;
+            }
+
+            .email {
+                font-size: 1.6rem;
+            }
+        }
+
+        &__nav {
+            row-gap: 2.4rem;
+
+            border-right: 2px solid $color-main-light-2;
+        }
+
+        &__socials-list {
+            row-gap: 1.2rem;
+        }
+
+        .social-link:link,
+        .social-link:visited {
+            row-gap: 1.2rem;
+            color: white;
+            text-decoration: none;
+        }
+
+        &__list {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            padding-left: 4rem;
+        }
+    }
+    .footer__copyright {
+        text-align: center;
+    }
+}
