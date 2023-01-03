@@ -1,7 +1,6 @@
 import React from 'react';
 
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import resume from '../../documents/caleb_janhunen_resume.pdf';
 import './Footer.scss';
 
 const Footer = () => {
@@ -54,16 +53,6 @@ const Footer = () => {
                             <FaGithubSquare size={40} />
                         </a>
                     </li>
-                    {/* <li className="social-list__item">
-                        <a
-                            href={resume}
-                            target="_blank"
-                            className="social-link resume"
-                            rel="noreferrer"
-                        >
-                            Resume
-                        </a>
-                    </li> */}
                 </ul>
             </div>
             <p className="footer__copyright">

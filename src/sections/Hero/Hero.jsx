@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import { FaGithubSquare, FaLinkedin } from 'react-icons/fa';
-import resume from '../../documents/caleb_janhunen_resume.pdf';
+import resume from '../../documents/calebjanhunen_resume.pdf';
 
 import './Hero.scss';
 
