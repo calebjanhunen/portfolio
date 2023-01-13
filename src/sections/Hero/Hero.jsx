@@ -4,6 +4,7 @@ import resume from '../../documents/calebjanhunen_resume.pdf';
 
 import './Hero.scss';
 
+import profilePicture from '../../images/CalebJanhunen-profile.png';
 import picture from '../../images/hero-img.png';
 
 const Hero = () => {
@@ -19,7 +20,11 @@ const Hero = () => {
     return (
         <section className="section-hero" id="hero">
             <div className="hero">
-                <img className="hero__img" src={picture} alt="Headshot" />
+                <img
+                    className="hero__img"
+                    src={profilePicture}
+                    alt="Headshot"
+                />
                 <div className="hero__text">
                     <h1 className="heading-primary hero__heading">
                         Hi, I'm{' '}
