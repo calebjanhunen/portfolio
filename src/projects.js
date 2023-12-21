@@ -76,23 +76,6 @@ const projects = [
         img: require('./images/website-portfolio-display.png'),
         githubLink: 'https://github.com/calebjanhunen/website-portfolio',
     },
-
-    {
-        name: 'Workout Tracker (Frontend Redesign)',
-        technologiesUsed: [
-            { imgPath: require('./images/logos/react.svg'), alt: 'React Logo' },
-            { imgPath: require('./images/logos/html.svg'), alt: 'HTML Logo' },
-            { imgPath: require('./images/logos/css3.svg'), alt: 'CSS Logo' },
-        ],
-        description: [
-            'Redesigned the frontend of the Workout Tracker application creating a more intuitive user interface',
-            'Developed the application using React, HTML and CSS',
-            'Semantic HTML and SCSS were utilized throughout the codebase to ensure easy readability and ability to create a responsive design',
-        ],
-        img: require('./images/workout-tracker-frontend-display.png'),
-        githubLink:
-            'https://github.com/calebjanhunen/workout-tracker-website-FRONTEND',
-    },
 ];
 
 export default projects;
