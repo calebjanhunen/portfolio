@@ -48,7 +48,16 @@ const SingleProject = ({
 
     return (
         <div ref={projectRef} className="project">
-            <img ref={imgRef} className="project__img" src={img} alt={name} />
+            {img ? (
+                <img
+                    ref={imgRef}
+                    className="project__img"
+                    src={img}
+                    alt={name}
+                />
+            ) : (
+                <h3 ref={imgRef} style={{ textAlign: 'center' }}>No Image</h3>
+            )}
 
             <div ref={bodyRef} className="project__body">
                 <h3 className="heading-tertiary project__title">{name}</h3>
@@ -75,7 +84,7 @@ const SingleProject = ({
                             href={demoLink}
                             target="_blank"
                             rel="noreferrer"
-                            className="project__btn"
+                            className='project__btn'
                         >
                             Live Demo
                         </a>
