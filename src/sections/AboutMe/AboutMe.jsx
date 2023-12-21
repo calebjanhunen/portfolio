@@ -33,7 +33,7 @@ const AboutMe = () => {
                     <span className="aboutme__important-text">
                         University of Guelph
                     </span>
-                    . I am in my 4th year of the coop program and have gained an
+                    . I am in my 5th year of the coop program and have gained an
                     extensive amount of experience from projects and past jobs
                     throughout that time. I am passionate about solving problems
                     and working in a team environment to expand my knowledge of
