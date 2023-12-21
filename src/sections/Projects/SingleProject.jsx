@@ -56,7 +56,7 @@ const SingleProject = ({
                     alt={name}
                 />
             ) : (
-                <h3 style={{ textAlign: 'center' }}>No Image</h3>
+                <h3 ref={imgRef} style={{ textAlign: 'center' }}>No Image</h3>
             )}
 
             <div ref={bodyRef} className="project__body">
