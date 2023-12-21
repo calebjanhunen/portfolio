@@ -1,35 +1,36 @@
 const projects = [
     {
-        name: 'Workout Tracker',
+        name: 'Fitracker API',
         technologiesUsed: [
-            { imgPath: require('./images/logos/react.svg'), alt: 'React Logo' },
-            { imgPath: require('./images/logos/html.svg'), alt: 'HTML Logo' },
-            { imgPath: require('./images/logos/css3.svg'), alt: 'CSS Logo' },
             {
-                imgPath: require('./images/logos/express.svg'),
-                alt: 'ExpressJS Logo',
+                imgPath: require('./images/logos/nestjs.svg'),
+                alt: 'NestJS Logo',
             },
             {
-                imgPath: require('./images/logos/node-js.svg'),
-                alt: 'NodeJS Logo',
+                imgPath: require('./images/logos/typeorm.svg'),
+                alt: 'TypeORM Logo',
             },
             {
-                imgPath: require('./images/logos/mongodb.svg'),
-                alt: 'MongoDB Logo',
+                imgPath: require('./images/logos/postgresql.svg'),
+                alt: 'PostgreSQL Logo',
             },
             {
-                imgPath: require('./images/logos/rest-api-icon.webp'),
-                alt: 'RestAPI Logo',
+                imgPath: require('./images/logos/docker.svg'),
+                alt: 'Docker Logo',
+            },
+            {
+                imgPath: require('./images/logos/jest.svg'),
+                alt: 'Jest Logo',
             },
         ],
         description: [
-            'Designed a Full Stack Website used to track your workouts (exercises, sets, reps, etc)',
-            'Created the backend REST API using Node.js, MongoDB and Express',
-            'Developed the frontend website using React and Redux/Redux Toolkit',
+            'Created a REST API for a workout app to track workouts (exercise, sets, reps, etc)',
+            'Used NestJS for the API, TypeORM for the database management and PostgreSQL and Docker for the database',
+            'Implemented security with token based authentication',
         ],
-        img: require('./images/workout-tracker-display.png'),
-        githubLink: 'https://github.com/calebjanhunen/workout-tracker-app',
-        demoLink: 'https://janhunen-workout-tracker.netlify.app/login',
+        img: '',
+        githubLink: 'https://github.com/calebjanhunen/fitracker-api',
+        demoLink: '',
     },
 
     {
