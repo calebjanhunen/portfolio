@@ -84,9 +84,7 @@ const SingleProject = ({
                             href={demoLink}
                             target="_blank"
                             rel="noreferrer"
-                            className={`project__btn ${
-                                demoLink === 'N/A' ? 'disabled' : ''
-                            }`}
+                            className='project__btn'
                         >
                             Live Demo
                         </a>

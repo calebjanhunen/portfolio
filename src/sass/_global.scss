@@ -52,16 +52,6 @@ html {
     animation-fill-mode: forwards;
 }
 
-.disabled {
-    &:link,
-    &:visited {
-        pointer-events: none;
-        background-color: grey;
-        color: white !important;
-        // border: none !important;
-    }
-}
-
 /**********************/
 // MEDIA QUERIES //
 /**********************/
