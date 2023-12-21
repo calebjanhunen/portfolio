@@ -5,7 +5,6 @@ import resume from '../../documents/calebjanhunen_resume.pdf';
 import './Hero.scss';
 
 import profilePicture from '../../images/CalebJanhunen-profile.png';
-import picture from '../../images/hero-img.png';
 
 const Hero = () => {
     const linkedinRef = useRef();
