@@ -32,7 +32,31 @@ const projects = [
         githubLink: 'https://github.com/calebjanhunen/fitracker-api',
         demoLink: '',
     },
-
+    {
+        name: 'Fitracker App',
+        technologiesUsed: [
+            {
+                imgPath: require('./images/logos/react.svg'),
+                alt: 'React Logo',
+            },
+            {
+                imgPath: require('./images/logos/typescript.svg'),
+                alt: 'Typescript Logo',
+            },
+            {
+                imgPath: require('./images/logos/supabase.svg'),
+                alt: 'Supabase Logo',
+            },
+        ],
+        description: [
+            'Developed a mobile app to track workouts (exercise, sets, reps, etc)',
+            'Used React Native for the frontend and implemented Supabase for the database (plan on integrating Fitracker API into the frontend)',
+            "Designed and implemented the app's UI and UX to provide an intuitive and engaging workout tracking platform",
+        ],
+        img: require('./images/fitracker-app.png'),
+        githubLink: 'https://github.com/calebjanhunen/fitracker-app',
+        demoLink: '',
+    },
     {
         name: 'Chat Application',
         technologiesUsed: [
@@ -60,7 +84,6 @@ const projects = [
         githubLink: 'https://github.com/calebjanhunen/chat-app',
         demoLink: 'https://janhunen-chat-app.herokuapp.com',
     },
-
     {
         name: 'Website Portfolio',
         technologiesUsed: [
@@ -75,23 +98,6 @@ const projects = [
         ],
         img: require('./images/website-portfolio-display.png'),
         githubLink: 'https://github.com/calebjanhunen/website-portfolio',
-    },
-
-    {
-        name: 'Workout Tracker (Frontend Redesign)',
-        technologiesUsed: [
-            { imgPath: require('./images/logos/react.svg'), alt: 'React Logo' },
-            { imgPath: require('./images/logos/html.svg'), alt: 'HTML Logo' },
-            { imgPath: require('./images/logos/css3.svg'), alt: 'CSS Logo' },
-        ],
-        description: [
-            'Redesigned the frontend of the Workout Tracker application creating a more intuitive user interface',
-            'Developed the application using React, HTML and CSS',
-            'Semantic HTML and SCSS were utilized throughout the codebase to ensure easy readability and ability to create a responsive design',
-        ],
-        img: require('./images/workout-tracker-frontend-display.png'),
-        githubLink:
-            'https://github.com/calebjanhunen/workout-tracker-website-FRONTEND',
     },
 ];
 
