@@ -33,9 +33,9 @@ jobs:
 
       # Build for production
       - name: Production Build
-        run: npm run build
-        env:
-         CI: ""
+        run: |
+          unset CI
+          npm run build
 
       # Deploy to s3 bucket
       - name: Deploy to AWS S3 Bucket
