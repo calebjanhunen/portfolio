@@ -14,18 +14,18 @@ jobs:
     # Set the node version used for the action
     strategy:      
       matrix:        
-       node-version: [16.x]
+       node-version: [20.x]
 
     steps:
       # Setup node
       - name: Use Node.JS ${{matrix.node-version}}
-        uses: actions/setup-node@v1
+        uses: actions/setup-node@v4
         with:
           node-version: ${{matrix.node-version}}
 
       # Access code from Git
       - name: Git Checkout
-        uses: actions/checkout@v2
+        uses: actions/checkout@v4.1.5
 
       # Install packages
       - name: Install Packages
@@ -34,6 +34,8 @@ jobs:
       # Build for production
       - name: Production Build
         run: npm run build
+        env:
+         CI: ""
 
       # Deploy to s3 bucket
       - name: Deploy to AWS S3 Bucket
